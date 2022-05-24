@@ -1,0 +1,115 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 150;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header__searchInput {
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  outline: 0;
+}
+
+.header__searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff9900;
+  padding: 5px 7px;
+  color: #fff;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.header__nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.header__btn {
+  margin: 0 7px;
+  outline: 0;
+  border: 0;
+  background: #ff9900;
+
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header__optionLineOne {
+  font-size: 15px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+}
+
+.uil-shopping-cart-alt {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .header__search {
+    flex: 0.5;
+  }
+  .header__nav {
+    flex: 0.4;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 850px) {
+  .header__search {
+    flex: 2;
+  }
+  .header__option {
+    display: none;
+  }
+}
